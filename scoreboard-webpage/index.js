@@ -3,33 +3,13 @@ let guestScore = 0
 let homeScoreEl = document.getElementById("homescore-el")
 let guestScoreEl = document.getElementById("guestscore-el")
 
-function add1home() {
-    homeScore += 1
+function addhome(points) {
+    homeScore += points
     homeScoreEl.innerHTML =  homeScore
 }
 
-function add2home() {
-    homeScore += 2
-    homeScoreEl.textContent =  homeScore
-}
-
-function add3home() {
-    homeScore += 3
-    homeScoreEl.textContent =  homeScore
-}
-
-function add1guest() {
-    guestScore += 1
-    guestScoreEl.textContent =  guestScore
-}
-
-function add2guest() {
-    guestScore += 2
-    guestScoreEl.textContent =  guestScore
-}
-
-function add3guest() {
-    guestScore += 3
+function addguest(points) {
+    guestScore += points
     guestScoreEl.textContent =  guestScore
 }
 
