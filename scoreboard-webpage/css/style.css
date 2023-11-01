@@ -1,0 +1,111 @@
+@font-face {
+    font-family: scoreFont;
+    src: url(CursedTimerUlil-Aznm.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #2F4858;
+}
+
+h1 {
+    margin: 2vmax;
+    font-size: 5vmax;
+    text-align: center;
+}
+
+h1, h2, button {
+    color: antiquewhite;
+}
+
+#teams {
+    font-size: 2.5vmax;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#scores {
+    font-size: 7.5vmax;
+    font-family: scoreFont, serif;
+    color: #FF0000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h3 {
+    background-color: #325082;
+    padding: 4vmax 8vmax;
+    border-radius: 1vmax;
+    margin: 1rem;
+}
+
+#addscores {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#addscores button, #newgame {
+    font-size: 2.5vmax;
+    padding: 0.5vmax 1vmax;
+    margin: 0.4vmax;
+    border-radius: 1vmax;
+    border: none;
+    background-color: #6D4B9A;
+    cursor: pointer;
+}
+
+#addscores button:hover, #newgame:hover {
+    background-color: #B62A8F;
+}
+
+#newgame {
+    display: flex;
+    margin: 0 auto;
+}
+
+#connect {
+  border: none;
+  background-color: #0077b5;
+  border-radius: 20px;
+  background-size: 100% auto;
+  font-family: serif;
+  font-size: 1.25vmax;
+  padding: 0.5vmax 1vmax;
+  display: flex;
+  margin: 2rem auto;
+}
+
+#closing-button {
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+#connect:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+  cursor: pointer;
+}
+
+@keyframes pulse512 {
+  0% {
+    box-shadow: 0 0 0 0 #0077b5;
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px #fff;
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 #333;
+  }
+}

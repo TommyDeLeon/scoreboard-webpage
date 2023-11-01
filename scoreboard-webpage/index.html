@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Scoreboard</title>
+  </head>
+  <body>
+    <h1>Scoreboard</h1>
+    <div id="teams">
+      <h2>HOME</h2>
+      <h2>GUEST</h2>
+    </div>
+    <div id="scores">
+      <h3 id="homescore-el">0</h3>
+      <h3 id="guestscore-el">0</h3>
+    </div>
+    <div id="addscores">
+      <div id="homeaddscores">
+        <button id="add1-home" onclick="add1home()">+1</button>
+        <button id="add2-home" onclick="add2home()">+2</button>
+        <button id="add3-home" onclick="add3home()">+3</button>
+      </div>
+      <div id="guestaddscores">
+        <button id="add1-guest" onclick="add1guest()">+1</button>
+        <button id="add2-guest" onclick="add2guest()">+2</button>
+        <button id="add3-guest" onclick="add3guest()">+3</button>
+      </div>
+    </div>
+    <button id="newgame" onclick="newgame()">New Game</button>
+    <button id="connect">
+      <a
+        id="closing-button"
+        href="https://www.linkedin.com/in/tommy-de-leon-b22bb1276"
+        target="_blank"
+        >Connect with me!</a
+      >
+    </button>
+    <script src="index.js"></script>
+  </body>
+</html>
